@@ -6,25 +6,13 @@ import {
   Box,
   IconButton,
 } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
+import { Link as RouterLink, NavLink } from "react-router-dom";
+import "../css/navbar.css";
+
 export default function Navbar() {
   return (
     <AppBar position="static" style={{ background: "#001144", color: "#fff" }}>
       <Toolbar style={{ minHeight: "150px" }}>
-        {/* Logo/Title - align left */}
-        {/* <Typography
-          variant="h6"
-          component={RouterLink}
-          to="/"
-          sx={{ color: "inherit", textDecoration: "none" }}
-          style={{
-            fontSize: "2.5rem",
-            fontWeight: "bold",
-            fontFamily: "Arial, sans-serif",
-          }}
-        >
-          Shinevia
-        </Typography> */}
         <IconButton
           edge="start"
           color="inherit"
@@ -32,69 +20,48 @@ export default function Navbar() {
           component={RouterLink}
           to="/"
         >
-          <img src="Navbar.png" alt="logo" />
+          <img
+            src="/component/Navigation.png"
+            alt="logo"
+            height={"88px"}
+            width={"189px"}
+          />
         </IconButton>
         <Box sx={{ flexGrow: 1 }} />
         {/* Navigation Links - center */}
-        <Box sx={{ flexGrow: 1.5, display: "flex", justifyContent: "center" }}>
-          <Button
-            sx={{
-              color: " #EAF3FB",
-              fontFamily: "Heiti SC",
-              fontSize: "16px",
-              fontStyle: "normal",
-              fontWeight: "400",
-              lineHeight: "12px" /* 75% */,
-            }}
-            component={RouterLink}
-            to="/about"
-          >
+        <Box
+          sx={{
+            flexGrow: 2,
+            display: "flex",
+            justifyContent: "center",
+            gap: "40px",
+          }}
+        >
+          <NavLink to="/about" className="nav-link">
             关于我们
-          </Button>
-          <Button
-            sx={{
-              color: " #EAF3FB",
-              fontFamily: "Heiti SC",
-              fontSize: "16px",
-              fontStyle: "normal",
-              fontWeight: "400",
-              lineHeight: "12px" /* 75% */,
-            }}
-            component={RouterLink}
-            to="/product"
-          >
+          </NavLink>
+          <NavLink to="/product" className="nav-link">
             产品中心
-          </Button>
-          {/* <Button color="inherit" component={RouterLink} to="/solutions">
-            Solutions
-          </Button> */}
-          <Button
-            sx={{
-              color: " #EAF3FB",
-              fontFamily: "Heiti SC",
-              fontSize: "16px",
-              fontStyle: "normal",
-              fontWeight: "400",
-              lineHeight: "12px" /* 75% */,
-            }}
-            component={RouterLink}
-            to="/support"
-          >
-            服务中心
-          </Button>
+          </NavLink>
+          <NavLink to="/news" className="nav-link">
+            新闻中心
+          </NavLink>
         </Box>
-        {/* Spacing Box - align right */}
         <Box sx={{ flexGrow: 1 }} />
         <Button
           variant="contained"
-          sx={{ ml: 2 }}
-          style={{
+          sx={{
             background: "#000",
             width: "251px",
             height: "75px",
-            padding: "10px",
+            //padding: "10px",
             gap: "10px",
             borderRadius: "5px",
+            fontFamily: "Microsoft YaHei , sans-serif",
+            "&:hover": {
+              background: "#fff",
+              color: "#000",
+            },
           }}
           component={RouterLink}
           to="/"

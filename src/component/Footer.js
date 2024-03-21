@@ -36,9 +36,9 @@ export default function Footer() {
               to="/"
             >
               <img
-                src="footer.png"
+                src="/component/Navigation.png"
                 alt="logo"
-                style={{ height: "80%", width: "80%" }}
+                style={{ height: "88px", width: "189px" }}
               ></img>
             </IconButton>
             <Typography variant="subtitle1" color="inherit">

@@ -1,10 +1,11 @@
-import { Box, Grid, Typography, Button } from "@mui/material";
+import { Box, Grid, Typography, Button, Container } from "@mui/material";
 
 export default function QA() {
   return (
-    <Box>
-      <hr className="section-divider" />
-      <Box sx={{ flexGrow: 1, my: 4, padding: "5rem" }}>
+    <Container display="flex" maxWidth="lg">
+      <Box
+        sx={{ flexGrow: 1, my: 4, paddingTop: "5rem", paddingBottom: "5rem" }}
+      >
         <Grid
           container
           spacing={2}
@@ -20,7 +21,12 @@ export default function QA() {
             >
               如有任何疑问 ?
             </Typography>
-            <Typography variant="subtitle1" textAlign="left">
+            <Typography
+              variant="subtitle1"
+              textAlign="left"
+              fontWeight={"400"}
+              fontFamily={'"Microsoft YaHei , sans-serif"'}
+            >
               如果您对我们的设备、定制需求和一般查询有疑问，请随时与我们的专业支持团队联系。
             </Typography>
           </Grid>
@@ -31,9 +37,15 @@ export default function QA() {
                 background: "#000",
                 width: "251px",
                 height: "75px",
-                padding: "10px",
+                //padding: "10px",
                 gap: "10px",
                 borderRadius: "5px",
+                fontweight: "400",
+                fontFamily: "Microsoft YaHei , sans-serif",
+                "&:hover": {
+                  background: "#fff",
+                  color: "#000",
+                },
               }}
             >
               联系客服
@@ -41,8 +53,6 @@ export default function QA() {
           </Grid>
         </Grid>
       </Box>
-
-      <hr className="section-divider" />
-    </Box>
+    </Container>
   );
 }

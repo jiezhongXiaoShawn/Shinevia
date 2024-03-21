@@ -11,8 +11,15 @@ import {
 
 const MedicalDeviceComponent = ({ title, description, imageUrl }) => {
   return (
-    <Card sx={{ display: "flex", alignItems: "center", padding: 2 }}>
-      <Box sx={{ paddingRight: "20rem" }}></Box>
+    <Card
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        padding: 2,
+        justifyContent: "center",
+      }}
+    >
+      {/* <Box sx={{ paddingRight: "20rem" }}></Box> */}
       <CardMedia
         variant="outlined"
         component="img"
