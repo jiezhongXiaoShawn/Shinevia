@@ -11,7 +11,7 @@ const Intro = () => {
           backgroundImage: "url('/homepage/topImg.gif')",
           backgroundSize: "cover",
           width: "100%",
-          height: "100%",
+
           height: "80vh",
           transform: "rotate(-4deg) translateY(-10%) translateX(1.5%)",
           borderRadius: "1%",
@@ -78,7 +78,7 @@ const Intro = () => {
                 fontFamily: "Microsoft YaHei",
                 fontWeight: "700",
                 fontStyle: "normal",
-                fontSize: "12px",
+                fontSize: "15px",
                 textAlign: "left",
               }}
             >

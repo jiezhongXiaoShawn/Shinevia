@@ -36,15 +36,17 @@ const Honer = () => {
             paddingLeft={"2rem"}
             variant="body1"
             sx={{
+              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               color: "black",
               textAlign: "left",
               marginTop: "20px",
-              fontWeight: "400",
-              fontFamily: "Microsoft YaHei",
+              fontWeight: "500",
+              fontFamily: "Microsoft YaHei, sans-serif,Roboto",
               width: "50%",
               display: "flex",
               flexDirection: "column",
               justifyContent: "flex-end",
+              letterSpacing: "1.4px",
             }}
           >
             显微智能始终将“技术创新”放在首位，现已取得知识产权近二百项，创建了全球领先的荧光分子成像技术--特殊光成像技术平台，原研首创的皮摩尔级超高灵敏度图像探测器全球领先，在诸多外科细分领域实现了技术突破和产品布局，为临床外科医生提供精准的手术解决方案。

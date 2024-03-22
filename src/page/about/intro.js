@@ -9,7 +9,7 @@ const Intro = () => {
           backgroundImage: "url('/homepage/topImg.gif')",
           backgroundSize: "cover",
           width: "100%",
-          height: "100%",
+          //height: "100%",
           height: "100vh",
           // transform: "rotate(-4deg) translateY(-10%) translateX(1.5%)",
           // borderRadius: "1%",
@@ -34,7 +34,7 @@ const Intro = () => {
               fontFamily: "Microsoft YaHei",
             }}
           >
-            奴光而行，照亮生命
+            驭光而行，照亮生命
           </Typography>
           <Typography
             variant="h6"
@@ -45,6 +45,8 @@ const Intro = () => {
               fontWeight: "400",
               fontFamily: "Microsoft YaHei",
               width: "50%",
+              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+              letterSpacing: "1.4px",
             }}
           >
             显微智能科技有限公司成立于2017年，是集科研、设计、生产制造、销售、服务为一体的国家高新技术企业。公司总部位于山东省济南市，分别在上海设立运营管理中心，在杭州设立研发中心，在长沙浏阳经开区和济南章丘区设立两大生产基地

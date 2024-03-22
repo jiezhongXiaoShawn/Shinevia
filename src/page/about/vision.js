@@ -1,4 +1,4 @@
-import { Container, Box, Typography, Divider, CardMedia } from "@mui/material";
+import { Box, Typography, Divider, CardMedia } from "@mui/material";
 
 const Vision = () => {
   return (
@@ -46,6 +46,8 @@ const Vision = () => {
               fontWeight: "400",
               fontFamily: "Microsoft YaHei",
               width: "100%",
+              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+              letterSpacing: "1.4px",
             }}
           >
             <li>成为领先行业的特殊光技术创造者</li>
@@ -92,6 +94,8 @@ const Vision = () => {
               marginBottom: "20px",
               padding: "20px",
               width: "60%",
+              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+              letterSpacing: "1.4px",
             }}
           >
             显微智能科技有限公司运营管理中心于2023

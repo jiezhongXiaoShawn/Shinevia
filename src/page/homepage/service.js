@@ -26,7 +26,7 @@ const Service = () => {
             marginTop={"30px"}
             fontFamily={"Microsoft YaHei"}
           >
-            由专业团队执行,提供7*24 小时从交付安装到设备调试的全流程服务
+            由专业团队执行,提供7×24 小时从交付安装到设备调试的全流程服务
           </Typography>
         </Box>
         <Grid container rowSpacing={"89px"}>

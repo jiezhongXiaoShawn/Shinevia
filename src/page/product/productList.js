@@ -65,6 +65,7 @@ const ProductList = () => {
           </AccordionSummary>
           <AccordionDetails>
             <MedicalDeviceComponent
+              link={"/argos-4k-medical"}
               title="ARGOS-4K MEDICAL Device"
               description="Advanced endoscopy system for enhanced diagnostic accuracy."
               imageUrl="https://s3-alpha-sig.figma.com/img/d704/3dc1/ec816a5271ab47d547be2d7626095b99?Expires=1711324800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kd6igX5-clrwa8l1H0UQpIlERSRsKN4GHkTF-O97rknnChRxl03CdLguUlSWAgORHskB~Aj1-0YJ9mLDDPDdu8egy1DgO8zrNyQk~EHtAvEfVHwkvWd90T55XpMOpETUhhtOsiB9Fvv5za9kyugsoUCyJbnbVFTm5-me-ZdV7Or3uvSXtjyfjcq26mvVEJAdXjuwLnSBw2R-cOQ7~JM6sSIFMt4xL5nKmLFcH5OYgjdIimzo0V6XnqCkJf6jWDm~TeW3Ze9l9Vxl7AhZzMH8D~O5sppJLKOgX0t~Cu6MOcsKvD56DEbAzDgJkxnExI92NdNuWFn94j56JjrL46hjbw__"

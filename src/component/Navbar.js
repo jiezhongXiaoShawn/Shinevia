@@ -43,9 +43,6 @@ export default function Navbar() {
           <NavLink to="/product" className="nav-link">
             产品中心
           </NavLink>
-          <NavLink to="/news" className="nav-link">
-            新闻中心
-          </NavLink>
         </Box>
         <Box sx={{ flexGrow: 1 }} />
         <Button

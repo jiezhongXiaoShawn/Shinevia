@@ -8,8 +8,8 @@ import {
   Container,
   Button,
 } from "@mui/material";
-
-const MedicalDeviceComponent = ({ title, description, imageUrl }) => {
+import { Link as RouterLink } from "react-router-dom";
+const MedicalDeviceComponent = ({ title, description, imageUrl, link }) => {
   return (
     <Card
       sx={{
@@ -51,6 +51,8 @@ const MedicalDeviceComponent = ({ title, description, imageUrl }) => {
               width: "72px",
               fontSize: "1.5rem",
             }}
+            component={RouterLink}
+            to={link}
           >
             →
           </Button>

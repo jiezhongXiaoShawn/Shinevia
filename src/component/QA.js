@@ -1,11 +1,23 @@
-import { Box, Grid, Typography, Button, Container } from "@mui/material";
+import {
+  Box,
+  Grid,
+  Typography,
+  Button,
+  Container,
+  Divider,
+} from "@mui/material";
 
 export default function QA() {
   return (
-    <Container display="flex" maxWidth="lg">
-      <Box
-        sx={{ flexGrow: 1, my: 4, paddingTop: "5rem", paddingBottom: "5rem" }}
-      >
+    <Container display="flex" maxWidth="lg" marginTop="10rem">
+      <Divider
+        sx={{
+          bgcolor: "grey",
+          height: "0.4px",
+          my: 5,
+        }}
+      />
+      <Box sx={{ flexGrow: 1, my: 4 }}>
         <Grid
           container
           spacing={2}
@@ -53,6 +65,13 @@ export default function QA() {
           </Grid>
         </Grid>
       </Box>
+      <Divider
+        sx={{
+          bgcolor: "grey",
+          height: "0.4px",
+          my: 5,
+        }}
+      />
     </Container>
   );
 }
