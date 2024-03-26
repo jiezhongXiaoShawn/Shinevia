@@ -36,7 +36,6 @@ const Honer = () => {
             paddingLeft={"2rem"}
             variant="body1"
             sx={{
-              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               color: "black",
               textAlign: "left",
               marginTop: "20px",
@@ -46,6 +45,7 @@ const Honer = () => {
               display: "flex",
               flexDirection: "column",
               justifyContent: "flex-end",
+              textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
               letterSpacing: "1.4px",
             }}
           >

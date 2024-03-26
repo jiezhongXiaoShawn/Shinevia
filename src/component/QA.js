@@ -6,8 +6,19 @@ import {
   Container,
   Divider,
 } from "@mui/material";
+import Contact from "../page/Contact";
+import { useState } from "react";
 
 export default function QA() {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <Container display="flex" maxWidth="lg" marginTop="10rem">
       <Divider
@@ -52,16 +63,19 @@ export default function QA() {
                 //padding: "10px",
                 gap: "10px",
                 borderRadius: "5px",
-                fontweight: "400",
+                fontweight: "700",
+                fontSize: "14px",
                 fontFamily: "Microsoft YaHei , sans-serif",
                 "&:hover": {
                   background: "#fff",
                   color: "#000",
                 },
               }}
+              onClick={handleClickOpen}
             >
               联系客服
             </Button>
+            <Contact open={open} handleClose={handleClose} />
           </Grid>
         </Grid>
       </Box>

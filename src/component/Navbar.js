@@ -1,15 +1,31 @@
 import {
   AppBar,
   Toolbar,
-  Typography,
   Button,
   Box,
   IconButton,
+  Dialog,
+  DialogTitle,
+  DialogContent,
+  DialogContentText,
+  useMediaQuery,
+  Typography,
+  useTheme,
 } from "@mui/material";
 import { Link as RouterLink, NavLink } from "react-router-dom";
+import { useState } from "react";
 import "../css/navbar.css";
-
+import Contact from "../page/Contact";
 export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
   return (
     <AppBar position="static" style={{ background: "#001144", color: "#fff" }}>
       <Toolbar style={{ minHeight: "150px" }}>
@@ -59,12 +75,14 @@ export default function Navbar() {
               background: "#fff",
               color: "#000",
             },
+            fontWeight: "700",
+            fontSize: "14px",
           }}
-          component={RouterLink}
-          to="/"
+          onClick={handleClickOpen}
         >
           联络方式
         </Button>
+        <Contact open={open} handleClose={handleClose} />
       </Toolbar>
     </AppBar>
   );

@@ -122,7 +122,7 @@ const OurProduct = () => {
                 fontFamily: "Microsoft YaHei",
                 fontWeight: "700",
                 fontStyle: "normal",
-                fontSize: "12px",
+                fontSize: "15px",
                 textAlign: "left",
               }}
             >
