@@ -1,10 +1,37 @@
 import { Box, Typography, Button, Container } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 const Certificate = () => {
   const handleDownload = () => {
     console.log("Download button clicked");
   };
   return (
     <Container maxWidth="lg">
+      <Box display={"flex"} gap={1} p={1}>
+        <Typography
+          component={RouterLink}
+          to="/"
+          sx={{
+            color: "black",
+            fontFamily: "Microsoft YaHei , sans-serif",
+            fontWeight: "400",
+            fontSize: "0.8rem",
+          }}
+        >
+          主页
+        </Typography>
+        <Typography>&gt;</Typography>
+        <Typography
+          variant="text"
+          sx={{
+            color: "black",
+            fontFamily: "Microsoft YaHei , sans-serif",
+            fontWeight: "400",
+            fontSize: "0.8rem",
+          }}
+        >
+          产品中心
+        </Typography>
+      </Box>
       <Box display="flex" justifyContent="space-between" alignItems="center">
         <Box sx={{ paddingTop: "4rem" }}>
           <Typography

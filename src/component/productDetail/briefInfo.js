@@ -1,7 +1,55 @@
-import { CardMedia, Typography, Box, Container, Divider } from "@mui/material";
+import {
+  CardMedia,
+  Typography,
+  Box,
+  Container,
+  Divider,
+  Button,
+} from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 const BriefInfo = ({ image, title, subTitle, description }) => {
   return (
     <Box display={"flex"} flexDirection={"column"}>
+      <Box display={"flex"} gap={1} p={1}>
+        <Typography
+          component={RouterLink}
+          to="/"
+          sx={{
+            color: "black",
+            fontFamily: "Microsoft YaHei , sans-serif",
+            fontWeight: "400",
+            fontSize: "0.8rem",
+          }}
+        >
+          主页
+        </Typography>
+        <Typography>&gt;</Typography>
+        <Typography
+          variant="text"
+          component={RouterLink}
+          to="/product"
+          sx={{
+            color: "black",
+            fontFamily: "Microsoft YaHei , sans-serif",
+            fontWeight: "400",
+            fontSize: "0.8rem",
+          }}
+        >
+          产品中心
+        </Typography>
+        <Typography>&gt;</Typography>
+        <Typography
+          variant="text"
+          sx={{
+            color: "black",
+            fontFamily: "Microsoft YaHei , sans-serif",
+            fontWeight: "400",
+            fontSize: "0.8rem",
+          }}
+        >
+          {title}
+        </Typography>
+      </Box>
       <Container
         sx={{
           display: "flex",

@@ -1,17 +1,4 @@
-import {
-  AppBar,
-  Toolbar,
-  Button,
-  Box,
-  IconButton,
-  Dialog,
-  DialogTitle,
-  DialogContent,
-  DialogContentText,
-  useMediaQuery,
-  Typography,
-  useTheme,
-} from "@mui/material";
+import { AppBar, Toolbar, Button, Box, IconButton } from "@mui/material";
 import { Link as RouterLink, NavLink } from "react-router-dom";
 import { useState } from "react";
 import "../css/navbar.css";

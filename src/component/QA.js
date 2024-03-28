@@ -20,7 +20,7 @@ export default function QA() {
     setOpen(false);
   };
   return (
-    <Container display="flex" maxWidth="lg" marginTop="10rem">
+    <Container display="flex" maxWidth="lg" marginTop="10rem" height="50vh">
       <Divider
         sx={{
           bgcolor: "grey",
@@ -34,6 +34,7 @@ export default function QA() {
           spacing={2}
           alignItems="center"
           justifyContent="space-between"
+          height={"30vh"}
         >
           <Grid item xs={12} sm={8}>
             <Typography

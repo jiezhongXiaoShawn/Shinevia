@@ -1,13 +1,6 @@
 import React from "react";
-import { Card, CardMedia, Typography, Box, Button } from "@mui/material";
-import { Link as RouterLink } from "react-router-dom";
-const MedicalDeviceComponent = ({
-  title,
-  subtitle,
-  description,
-  imageUrl,
-  link,
-}) => {
+import { Card, CardMedia, Typography, Box } from "@mui/material";
+const MedicalDeviceNoBotton = ({ title, subtitle, description, imageUrl }) => {
   return (
     <Card
       sx={{
@@ -47,21 +40,6 @@ const MedicalDeviceComponent = ({
             </Typography>
           </Box>
           <Box sx={{ flexGrow: 1 }} />
-          <Button
-            variant="outlined"
-            sx={{
-              background: "#D9D9D9",
-              color: "#000",
-              //marginLeft: 10,
-              height: "72px",
-              width: "72px",
-              fontSize: "1.5rem",
-            }}
-            component={RouterLink}
-            to={link}
-          >
-            →
-          </Button>
         </Box>
 
         <Typography
@@ -82,11 +60,4 @@ const MedicalDeviceComponent = ({
   );
 };
 
-export default MedicalDeviceComponent;
-
-// Usage example:
-// <MedicalDeviceComponent
-//   title="ARGOS-4K MEDICAL Device"
-//   description="Advanced endoscopy system for enhanced diagnostic accuracy."
-//   imageUrl="/path-to-your-image.jpg"
-// />
+export default MedicalDeviceNoBotton;

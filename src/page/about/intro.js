@@ -1,4 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 const Intro = () => {
   return (
     <Box sx={{ overflow: "hidden" }}>
@@ -15,6 +16,32 @@ const Intro = () => {
           // borderRadius: "1%",
         }}
       >
+        <Box display={"flex"} gap={1} p={1} color={"white"}>
+          <Typography
+            component={RouterLink}
+            to="/"
+            sx={{
+              color: "white",
+              fontFamily: "Microsoft YaHei , sans-serif",
+              fontWeight: "400",
+              fontSize: "0.8rem",
+            }}
+          >
+            主页
+          </Typography>
+          <Typography>&gt;</Typography>
+          <Typography
+            variant="text"
+            sx={{
+              color: "white",
+              fontFamily: "Microsoft YaHei , sans-serif",
+              fontWeight: "400",
+              fontSize: "0.8rem",
+            }}
+          >
+            关于我们
+          </Typography>
+        </Box>
         <Container
           sx={{
             display: "flex",
