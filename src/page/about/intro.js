@@ -16,14 +16,14 @@ const Intro = () => {
           // borderRadius: "1%",
         }}
       >
-        <Box display={"flex"} gap={1} p={1} color={"white"}>
+        <Box display={"flex"} gap={1} p={1} color={"black"}>
           <Typography
             component={RouterLink}
             to="/"
             sx={{
-              color: "white",
+              color: "black",
               fontFamily: "Microsoft YaHei , sans-serif",
-              fontWeight: "400",
+              fontWeight: "600",
               fontSize: "0.8rem",
             }}
           >
@@ -33,7 +33,7 @@ const Intro = () => {
           <Typography
             variant="text"
             sx={{
-              color: "white",
+              color: "black",
               fontFamily: "Microsoft YaHei , sans-serif",
               fontWeight: "400",
               fontSize: "0.8rem",

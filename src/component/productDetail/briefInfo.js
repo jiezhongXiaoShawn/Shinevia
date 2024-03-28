@@ -17,7 +17,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
           sx={{
             color: "black",
             fontFamily: "Microsoft YaHei , sans-serif",
-            fontWeight: "400",
+            fontWeight: "700",
             fontSize: "0.8rem",
           }}
         >
