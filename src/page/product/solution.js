@@ -91,34 +91,35 @@ const CustomTabLabel = ({ backgroundUrl, label, hoverText }) => {
         >
           {label}
         </Typography>
-      </Box>
-      {/* 悬停文本 */}
-      <Box
-        className="hover-text"
-        sx={{
-          transition: "visibility 0s, opacity 0.7s ease",
-          visibility: "hidden",
-          opacity: 0,
-          position: "absolute",
-          bottom: 50,
-          width: "80%",
-          textAlign: "left",
-          //backgroundColor: "transparent",
-          color: "white",
-          //transition: "visibility 0s, opacity 0.5s ease",
-          //zIndex: 2,
-          p: 1, // 添加内边距
-          fontSize: "1rem",
-          fontWeight: "400",
-          //paddingBottom: "3rem",
-        }}
-      >
-        {hoverText.split("\\n").map((line, index) => (
-          <React.Fragment key={index}>
-            {line}
-            <br />
-          </React.Fragment>
-        ))}
+
+        {/* 悬停文本 */}
+        <Box
+          className="hover-text"
+          sx={{
+            transition: "visibility 0s, opacity 0.7s ease",
+            visibility: "hidden",
+            opacity: 0,
+            position: "absolute",
+            bottom: 50,
+            width: "80%",
+            textAlign: "left",
+            //backgroundColor: "transparent",
+            color: "white",
+            //transition: "visibility 0s, opacity 0.5s ease",
+            //zIndex: 2,
+            p: 1, // 添加内边距
+            fontSize: "1rem",
+            fontWeight: "400",
+            //paddingBottom: "3rem",
+          }}
+        >
+          {hoverText.split("\\n").map((line, index) => (
+            <React.Fragment key={index}>
+              {line}
+              <br />
+            </React.Fragment>
+          ))}
+        </Box>
       </Box>
     </Box>
   );
