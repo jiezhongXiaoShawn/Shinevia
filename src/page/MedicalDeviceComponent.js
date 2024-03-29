@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardMedia, Typography, Box, Button } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
+
 const MedicalDeviceComponent = ({
   title,
   subtitle,
@@ -10,15 +11,16 @@ const MedicalDeviceComponent = ({
 }) => {
   return (
     <Card
+      elevation={0}
       sx={{
         display: "flex",
         alignItems: "stretch",
         padding: 2,
         justifyContent: "center",
         gap: 5,
+        borderBottom: "1px solid #D9D9D9",
       }}
     >
-      {/* <Box sx={{ paddingRight: "20rem" }}></Box> */}
       <CardMedia
         variant="outlined"
         component="img"
@@ -31,18 +33,31 @@ const MedicalDeviceComponent = ({
           display: "flex",
           flexDirection: "column",
           paddingX: 2,
-          //paddingLeft: "5rem",
           width: "35%",
-
-          justifyContent: "space-between",
+          justifyContent: "flex-start",
         }}
       >
         <Box sx={{ display: "flex" }}>
           <Box display={"flex"} flexDirection={"column"}>
-            <Typography variant="h5" fontWeight={"400"} textAlign="left">
+            {/* Use clamp() for responsive font size */}
+            <Typography
+              variant="h5"
+              fontWeight={"400"}
+              textAlign="left"
+              sx={{
+                fontSize: "clamp(1.5rem, 1.64vw, 2rem)", // Adjusts between 1rem and 2rem, depending on viewport width
+              }}
+            >
               {title}
             </Typography>
-            <Typography variant="body5" color={"black"} textAlign="left">
+            <Typography
+              variant="body2" // changed to body2 for consistency
+              color={"black"}
+              textAlign="left"
+              sx={{
+                fontSize: "clamp(1rem, 1.23vw, 1.5rem)", // Adjust according to your design
+              }}
+            >
               {subtitle}
             </Typography>
           </Box>
@@ -52,10 +67,10 @@ const MedicalDeviceComponent = ({
             sx={{
               background: "#D9D9D9",
               color: "#000",
-              //marginLeft: 10,
               height: "72px",
               width: "72px",
               fontSize: "1.5rem",
+              // Consider making button size responsive if necessary
             }}
             component={RouterLink}
             to={link}
@@ -63,7 +78,7 @@ const MedicalDeviceComponent = ({
             →
           </Button>
         </Box>
-
+        <Box height={"20%"}></Box>
         <Typography
           variant="body1"
           color={"black"}
@@ -71,9 +86,9 @@ const MedicalDeviceComponent = ({
             marginY: 2,
             alignSelf: "flex-start",
             lineHeight: 1.5,
-            // bottom: 10,
+            textAlign: "left",
+            fontSize: "clamp(0.9rem, 1.09vw, 1.2rem)", // Make description text responsive
           }}
-          textAlign="left"
         >
           {description}
         </Typography>
@@ -83,10 +98,3 @@ const MedicalDeviceComponent = ({
 };
 
 export default MedicalDeviceComponent;
-
-// Usage example:
-// <MedicalDeviceComponent
-//   title="ARGOS-4K MEDICAL Device"
-//   description="Advanced endoscopy system for enhanced diagnostic accuracy."
-//   imageUrl="/path-to-your-image.jpg"
-// />

@@ -1,6 +1,6 @@
 .nav-link {
+  font-size: clamp(0.5rem, 1.1vw, 1rem);
   color: #eaf3fb;
-  font-size: 16px;
   font-style: normal;
   font-weight: 400;
   font-family: Microsoft YaHei, sans-serif;

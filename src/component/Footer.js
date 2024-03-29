@@ -17,7 +17,26 @@ export default function Footer() {
   return (
     <Box
       component="footer"
-      sx={{ color: "white", backgroundColor: "black", py: 6 }}
+      sx={{
+        color: "white",
+        backgroundColor: "black",
+        py: 6,
+        ".MuiTypography-h6": {
+          // Applying responsive font size for h6 elements
+          fontSize: "clamp(1rem, 2.5vw, 1.25rem)",
+        },
+        ".MuiTypography-subtitle1": {
+          // Adjusting for subtitle1
+          fontSize: "clamp(0.875rem, 2vw, 1rem)",
+        },
+        ".MuiTypography-subtitle2": {
+          // Adjusting for subtitle2, like lower links
+          fontSize: "clamp(0.75rem, 1.5vw, 0.875rem)",
+        },
+        ".MuiTypography-body1": {
+          fontSize: "clamp(0.875rem, 1.094vw, 1.125rem)", // Adjusted for body1
+        },
+      }}
     >
       <Container maxWidth="lg">
         <Grid container spacing={5}>
@@ -84,20 +103,12 @@ export default function Footer() {
                 <LocationOnOutlinedIcon color="white" />
               </Box>
               <Box>
-                <Typography
-                  variant="subtitle1"
-                  color="inherit"
-                  textAlign={"left"}
-                >
+                <Typography variant="body1" color="inherit" textAlign={"left"}>
                   济南市历城区经十东路
                   <br />
                   30899号济南生物医药港
                 </Typography>
-                <Typography
-                  variant="subtitle1"
-                  color="inherit"
-                  textAlign={"left"}
-                >
+                <Typography variant="body1" color="inherit" textAlign={"left"}>
                   中区9号楼
                 </Typography>
               </Box>
@@ -112,7 +123,7 @@ export default function Footer() {
               <Box>
                 <SmartphoneOutlinedIcon color="white" />
               </Box>
-              <Typography variant="subtitle1" color="inherit">
+              <Typography variant="body1" color="inherit">
                 +86 400-1647789
               </Typography>
             </Box>
@@ -125,7 +136,7 @@ export default function Footer() {
               <Box>
                 <MailOutlineIcon color="white" />
               </Box>
-              <Typography variant="subtitle1" color="inherit">
+              <Typography variant="body1" color="inherit">
                 sales@shinevia.com
               </Typography>
             </Box>

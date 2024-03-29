@@ -63,7 +63,7 @@ export default function Navbar() {
               color: "#000",
             },
             fontWeight: "700",
-            fontSize: "14px",
+            fontSize: "clamp(0.5rem, 1vw, 1rem)",
           }}
           onClick={handleClickOpen}
         >
