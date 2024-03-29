@@ -34,7 +34,7 @@ const MedicalDeviceComponent = ({
           flexDirection: "column",
           paddingX: 2,
           width: "35%",
-          justifyContent: "flex-start",
+          justifyContent: "space-between",
         }}
       >
         <Box sx={{ display: "flex" }}>
@@ -78,7 +78,7 @@ const MedicalDeviceComponent = ({
             →
           </Button>
         </Box>
-        <Box height={"20%"}></Box>
+        {/* //<Box height={"20%"}></Box> */}
         <Typography
           variant="body1"
           color={"black"}
@@ -92,6 +92,10 @@ const MedicalDeviceComponent = ({
         >
           {description}
         </Typography>
+        <br />
+        <br />
+        <br />
+        <br />
       </Box>
     </Card>
   );

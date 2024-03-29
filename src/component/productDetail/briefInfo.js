@@ -62,7 +62,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
       >
         <Box
           sx={{
-            width: "20%", // 图片占宽度的30%
+            width: "50%", // 图片占宽度的30%
             display: "flex",
             justifyContent: "center",
             height: "10%",
@@ -86,7 +86,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
           }}
         >
           <Typography
-            variant="h6"
+            variant="h5"
             textAlign="left"
             fontWeight={"700"}
             fontFamily={"Microsoft YaHei , sans-serif"}
@@ -94,9 +94,9 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
             {title}
           </Typography>
           <Typography
-            variant="h4"
+            variant="h3"
             textAlign="left"
-            fontWeight={"700"}
+            fontWeight={"400"}
             fontFamily={"Microsoft YaHei , sans-serif"}
           >
             {subTitle}
@@ -109,7 +109,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
             }}
           />
           <Typography
-            variant="body2"
+            variant="body1"
             color={"#757575"}
             textAlign={"left"}
             fontFamily={'"Microsoft YaHei , sans-serif"'}
@@ -117,7 +117,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
             简介
           </Typography>
           <Typography
-            variant="body2"
+            variant="body1"
             sx={{ marginY: 2, color: "#4A4A4A;" }}
             textAlign="left"
           >

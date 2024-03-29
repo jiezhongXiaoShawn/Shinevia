@@ -161,6 +161,15 @@ const Solution = () => {
             <br />
             担当，微医疗健康事业注入智慧与活力。
           </Typography>
+          <Typography
+            variant="body1"
+            sx={{ marginBottom: 2, whiteSpace: "pre-line" }}
+            textAlign="right"
+          >
+            滑动查看更多
+            <br />
+            {"<-------------->"}
+          </Typography>
           <Tabs
             width="100%"
             variant="scrollable"

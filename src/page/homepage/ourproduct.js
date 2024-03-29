@@ -40,9 +40,16 @@ const OurProduct = () => {
       }}
     >
       <Box sx={{ display: "flex" }} width={"50%"}>
-        <IconButton onClick={handlePrev}>
-          <ArrowBackIosIcon />
-        </IconButton>
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          justifyContent={"center"}
+          alignItems={"center"}
+        >
+          <IconButton onClick={handlePrev}>
+            <ArrowBackIosIcon />
+          </IconButton>
+        </Box>
         <CardMedia
           variant="outlined"
           component="img"
@@ -50,9 +57,16 @@ const OurProduct = () => {
           image={imageList[current]}
           alt="Medical Device"
         />
-        <IconButton onClick={handlePrev}>
-          <ArrowForwardIosIcon />
-        </IconButton>
+        <Box
+          display={"flex"}
+          flexDirection={"column"}
+          alignItems={"center"}
+          justifyContent={"center"}
+        >
+          <IconButton onClick={handlePrev}>
+            <ArrowForwardIosIcon />
+          </IconButton>
+        </Box>
       </Box>
       <Box
         sx={{

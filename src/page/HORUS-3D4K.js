@@ -37,7 +37,7 @@ const Horus3D4K = () => {
   return (
     <Box>
       <BriefInfo
-        title={"HORUs-3D 4K"}
+        title={"HORUS-3D 4K"}
         subTitle={"立体内窥镜摄像系统"}
         description={
           "HORUS 3D 4K 荧光一体化摄像平台为首的微创外科产品，采用先进的4K超高清技术，结合3D立体视觉，为外科医生提供了沉浸式的手术视野。荧光技术的加入，给临床专家提供更全方位的智能导航，进一步提高了手术的精准度和安全性。"

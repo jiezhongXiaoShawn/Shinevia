@@ -143,7 +143,7 @@ export default function Footer() {
           </Grid>
           <Grid item xs={12} sm={3}>
             <Typography variant="h6" color="inherit" gutterBottom>
-              Social Media
+              社交网络
             </Typography>
             <IconButton color="inherit">
               <FacebookIcon />

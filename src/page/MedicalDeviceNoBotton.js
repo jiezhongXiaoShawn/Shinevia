@@ -29,7 +29,7 @@ const MedicalDeviceNoBotton = ({ title, subtitle, description, imageUrl }) => {
           //paddingLeft: "5rem",
           width: "35%",
 
-          justifyContent: "flex-start",
+          justifyContent: "space-between",
         }}
       >
         <Box sx={{ display: "flex" }}>
@@ -72,6 +72,10 @@ const MedicalDeviceNoBotton = ({ title, subtitle, description, imageUrl }) => {
         >
           {description}
         </Typography>
+        <br />
+        <br />
+        <br />
+        <br />
       </Box>
     </Card>
   );
