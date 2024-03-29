@@ -22,6 +22,7 @@ const accordionStyle = {
   "& .MuiAccordionSummary-root": {
     borderBottom: "1px solid rgba(0, 0, 0, .125)",
     minHeight: 56,
+    flexDirection: "row-reverse",
     "&.Mui-expanded": {
       minHeight: 56,
     },
@@ -56,7 +57,9 @@ const ProductList = () => {
         {/* Repeat this structure for each expandable item, make sure to pass the index to getAccordionSummaryStyle */}
         <Accordion sx={accordionStyle}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={
+              <ExpandMoreIcon sx={{ color: "white", fontSize: "3rem" }} />
+            }
             sx={getAccordionSummaryStyle(0)}
           >
             <Typography variant="h5" sx={{ paddingLeft: "160px" }}>
@@ -93,7 +96,9 @@ const ProductList = () => {
         {/* The next Accordion will have no space in between when the previous one is expanded */}
         <Accordion sx={accordionStyle}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={
+              <ExpandMoreIcon sx={{ color: "white", fontSize: "3rem" }} />
+            }
             sx={getAccordionSummaryStyle(1)}
           >
             <Typography variant="h5" sx={{ paddingLeft: "160px" }}>
@@ -137,7 +142,9 @@ const ProductList = () => {
         </Accordion>
         <Accordion sx={accordionStyle}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={
+              <ExpandMoreIcon sx={{ color: "white", fontSize: "3rem" }} />
+            }
             sx={getAccordionSummaryStyle(2)}
           >
             <Typography variant="h5" sx={{ paddingLeft: "160px" }}>
@@ -157,7 +164,9 @@ const ProductList = () => {
         </Accordion>
         <Accordion sx={accordionStyle}>
           <AccordionSummary
-            expandIcon={<ExpandMoreIcon />}
+            expandIcon={
+              <ExpandMoreIcon sx={{ color: "white", fontSize: "3rem" }} />
+            }
             sx={getAccordionSummaryStyle(3)}
           >
             <Typography variant="h5" sx={{ paddingLeft: "160px" }}>
