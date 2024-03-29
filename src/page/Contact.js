@@ -16,7 +16,7 @@ function Contact({ open, handleClose }) {
     { icon: "/contact/phone.png", text: "+86 400-1647-789" },
     {
       icon: "/contact/location.png",
-      text: "浙江省杭州市经济技术开发区399号浙商创新大厦9楼",
+      text: "济南市历城区经十东路30899号济南生物医药港中区9号楼",
     },
     // ...更多图标和文本
   ];
