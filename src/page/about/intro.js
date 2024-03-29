@@ -24,7 +24,7 @@ const Intro = () => {
               color: "black",
               fontFamily: "Microsoft YaHei , sans-serif",
               fontWeight: "600",
-              fontSize: "0.8rem",
+              fontSize: "1rem",
             }}
           >
             主页
@@ -36,7 +36,7 @@ const Intro = () => {
               color: "black",
               fontFamily: "Microsoft YaHei , sans-serif",
               fontWeight: "400",
-              fontSize: "0.8rem",
+              fontSize: "1rem",
             }}
           >
             关于我们

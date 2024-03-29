@@ -7,6 +7,9 @@ import {
   Link,
   IconButton,
 } from "@mui/material";
+import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
+import SmartphoneOutlinedIcon from "@mui/icons-material/SmartphoneOutlined";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Link as RouterLink } from "react-router-dom";
@@ -19,7 +22,7 @@ export default function Footer() {
       <Container maxWidth="lg">
         <Grid container spacing={5}>
           {/* Branding and copyright */}
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={3}>
             {/* <Typography
               variant="h6"
               color="inherit"
@@ -47,46 +50,87 @@ export default function Footer() {
           </Grid>
 
           {/* Information links */}
-          <Grid item xs={12} sm={4}>
+          <Grid item xs={12} sm={3}>
             <Typography variant="h6" color="inherit" gutterBottom>
-              Information
+              本站信息
             </Typography>
             {/* Add Link components with to="" as per your routing setup */}
             <Link href="/product" variant="subtitle1" color="inherit">
-              Products
-            </Link>
-            <br />
-            <Link href="certification" variant="subtitle1" color="inherit">
-              Certifications
-            </Link>
-            <br />
-            <Link href="support" variant="subtitle1" color="inherit">
-              Support
+              产品中心
             </Link>
             <br />
             <Link href="/about" variant="subtitle1" color="inherit">
-              About Us
+              关于我们
             </Link>
           </Grid>
 
           {/* Contact details */}
-          <Grid item xs={12} sm={4}>
-            <Typography variant="h6" color="inherit" gutterBottom>
-              Contacts
+          <Grid item xs={12} sm={3}>
+            <Typography
+              variant="h6"
+              color="inherit"
+              gutterBottom
+              textAlign={"left"}
+            >
+              联系方式
             </Typography>
-            <Typography variant="subtitle1" color="inherit">
-              1234 Sample Street
-              <br />
-              Austin Texas 78704
-            </Typography>
-            <Typography variant="subtitle1" color="inherit">
-              512.333.2222
-            </Typography>
-            <Typography variant="subtitle1" color="inherit">
-              sampleemail@gmail.com
-            </Typography>
-
-            {/* Social Media Icons */}
+            <Box
+              display={"flex"}
+              flexDirection={"row"}
+              alignItems={"center"}
+              gap={1}
+            >
+              <Box alignItems={"center"}>
+                <LocationOnOutlinedIcon color="white" />
+              </Box>
+              <Box>
+                <Typography
+                  variant="subtitle1"
+                  color="inherit"
+                  textAlign={"left"}
+                >
+                  济南市历城区经十东路
+                  <br />
+                  30899号济南生物医药港
+                </Typography>
+                <Typography
+                  variant="subtitle1"
+                  color="inherit"
+                  textAlign={"left"}
+                >
+                  中区9号楼
+                </Typography>
+              </Box>
+            </Box>
+            <br />
+            <Box
+              display={"flex"}
+              flexDirection={"row"}
+              alignItems={"center"}
+              gap={1}
+            >
+              <Box>
+                <SmartphoneOutlinedIcon color="white" />
+              </Box>
+              <Typography variant="subtitle1" color="inherit">
+                +86 400-1647789
+              </Typography>
+            </Box>
+            <Box
+              display={"flex"}
+              flexDirection={"row"}
+              alignItems={"center"}
+              gap={1}
+            >
+              <Box>
+                <MailOutlineIcon color="white" />
+              </Box>
+              <Typography variant="subtitle1" color="inherit">
+                sales@shinevia.com
+              </Typography>
+            </Box>
+          </Grid>
+          <Grid item xs={12} sm={3}>
             <Typography variant="h6" color="inherit" gutterBottom>
               Social Media
             </Typography>
@@ -102,17 +146,17 @@ export default function Footer() {
         {/* Lower links */}
         <Box mt={5} borderTop={1} borderColor="grey.500">
           <Grid container spacing={2} mt={1}>
-            <Grid item xs={6} sm={3}>
+            <Grid item xs={6} sm={6}>
               <Link href="#" variant="subtitle2" color="inherit">
-                Privacy Policy
+                隐私政策
               </Link>
             </Grid>
-            <Grid item xs={6} sm={3}>
+            <Grid item xs={6} sm={6}>
               <Link href="#" variant="subtitle2" color="inherit">
-                Terms & Conditions
+                条款协议
               </Link>
             </Grid>
-            <Grid item xs={6} sm={3}>
+            {/* <Grid item xs={6} sm={3}>
               <Link href="#" variant="subtitle2" color="inherit">
                 Copyright
               </Link>
@@ -121,7 +165,7 @@ export default function Footer() {
               <Link href="#" variant="subtitle2" color="inherit">
                 General Terms
               </Link>
-            </Grid>
+            </Grid> */}
           </Grid>
         </Box>
       </Container>
