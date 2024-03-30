@@ -63,6 +63,7 @@ const Service = () => {
                 variant="h1"
                 fontWeight="bold"
                 textAlign="left"
+                mr="3%"
                 sx={{ fontSize: "clamp(100px, 10vw, 200px)", width: "10%" }}
               >
                 {index + 1}
@@ -72,11 +73,11 @@ const Service = () => {
                 variant="h6"
                 textAlign="left"
                 sx={{
-                  width: { xs: "100%", md: "30%" },
+                  width: { xs: "70%", md: "30%" },
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
-                  fontSize: "clamp(0.9rem, 1.5vw + 0.5rem, 1.5rem)",
+                  fontSize: "clamp(0.8rem, 1.3vw + 0.5rem, 1.3rem)",
                 }}
               >
                 {detail.title}
@@ -86,7 +87,10 @@ const Service = () => {
               <Box flexGrow={5} />
               <CardMedia
                 component="img"
-                sx={{ width: "150px", height: "150px" }}
+                sx={{
+                  width: { md: "150px", xs: "70px" },
+                  height: { md: "150px", xs: "70px" },
+                }}
                 image={detail.icon}
                 alt="Service Detail Icon"
               />

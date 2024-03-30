@@ -41,7 +41,7 @@ export default function Navbar() {
         <Box
           sx={{
             flexGrow: 2,
-            display: { xs: "none", md: "flex" }, // 移动视图时隐藏
+            display: { xs: "flex", md: "flex" }, // 移动视图时隐藏
             justifyContent: "center",
             gap: "40px",
           }}
