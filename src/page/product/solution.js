@@ -90,7 +90,10 @@ const CustomTabLabel = ({ backgroundUrl, label, hoverText }) => {
           alignItems={"center"}
           textAlign={"center"}
           justifyContent={"center"}
-          sx={{ zIndex: 2 }}
+          sx={{
+            zIndex: 2,
+            fontSize: { xs: "1.25rem", sm: "1.5rem", md: "2rem" },
+          }}
         >
           {label}
         </Typography>
@@ -114,6 +117,7 @@ const CustomTabLabel = ({ backgroundUrl, label, hoverText }) => {
             fontSize: "1rem",
             fontWeight: "400",
             //paddingBottom: "3rem",
+            fontSize: { xs: "0.7rem", sm: "0.8rem", md: "1rem" },
           }}
         >
           {hoverText.split("\\n").map((line, index) => (

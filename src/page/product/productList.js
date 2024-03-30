@@ -49,7 +49,7 @@ const ProductList = () => {
       <Typography
         variant="h5"
         textAlign="left"
-        sx={{ paddingTop: "20px", paddingBottom: "20px", paddingLeft: "180px" }}
+        sx={{ paddingTop: "20px", paddingBottom: "20px", pl: "10%" }}
       >
         产品集合
       </Typography>
