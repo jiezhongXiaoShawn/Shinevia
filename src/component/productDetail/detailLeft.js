@@ -1,12 +1,13 @@
 import { Box, CardMedia, Typography, List, ListItem } from "@mui/material";
 import SquareIcon from "@mui/icons-material/Square";
+
 const DetailLeft = ({ image, title, items }) => {
   return (
     <Box
       display="flex"
       justifyContent="center"
       alignItems="center"
-      p={2}
+      pb={2}
       width="100%"
     >
       <Box
@@ -24,7 +25,7 @@ const DetailLeft = ({ image, title, items }) => {
           alignItems="center"
           justifyContent="left"
           width="100%"
-          marginBottom="47px"
+          marginBottom="5%"
         >
           <SquareIcon fontSize="large" />
           <Typography
@@ -33,6 +34,9 @@ const DetailLeft = ({ image, title, items }) => {
             fontWeight="400"
             textAlign="left"
             alignItems={"center"}
+            sx={{
+              fontSize: "clamp(1.5rem, 4vw, 2.5rem)", // Adjusts between 1.5rem and 2.5rem, depending on viewport width
+            }}
           >
             {title}
           </Typography>
@@ -45,7 +49,7 @@ const DetailLeft = ({ image, title, items }) => {
                 background: index % 2 === 0 ? "#F2FBFF" : "#F2F2F2",
                 display: "flex",
                 justifyContent: "left",
-                width: "100%", // Make sure the list items fill their container
+                width: "100%",
               }}
             >
               <Typography
@@ -53,6 +57,9 @@ const DetailLeft = ({ image, title, items }) => {
                 textAlign="left"
                 fontWeight="500"
                 fontFamily="Microsoft YaHei , sans-serif"
+                sx={{
+                  fontSize: "clamp(0.8rem, 2.05vw, 1.05rem)", // Dynamically adjusts font size
+                }}
               >
                 {item}
               </Typography>
@@ -64,7 +71,7 @@ const DetailLeft = ({ image, title, items }) => {
       <Box
         sx={{
           flex: "1 1 30%",
-          maxWidth: "30%",
+          maxWidth: { md: "30%", xs: "80%" },
           margin: "0 2%",
           display: "flex",
           justifyContent: "center",
@@ -75,8 +82,8 @@ const DetailLeft = ({ image, title, items }) => {
           image={image}
           alt="Product"
           sx={{
-            width: "100%", // Make sure the image fills its container
-            maxWidth: "100%", // Limit image width to not exceed its container
+            width: "100%",
+            maxWidth: "100%",
             height: "auto",
           }}
         />
@@ -84,4 +91,5 @@ const DetailLeft = ({ image, title, items }) => {
     </Box>
   );
 };
+
 export default DetailLeft;

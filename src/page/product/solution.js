@@ -17,7 +17,10 @@ const ProductTheme = createTheme({
         root: {
           padding: "0.4rem",
           //marginRight: "0.2rem",
-          width: "25%", // 控制Tab的宽度
+          width: "50%", // 默认情况下一行显示3个Tab
+          "@media (min-width:600px)": {
+            width: "25%", // 超过600px时一行显示4个Tab
+          }, // 控制Tab的宽度
           height: "90vh", // 控制Tab的高度
           fontSize: "2rem",
           display: "flex", // 使Tab内容居中

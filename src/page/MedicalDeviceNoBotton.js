@@ -14,13 +14,15 @@ const MedicalDeviceNoBotton = ({ title, subtitle, description, imageUrl }) => {
       }}
     >
       {/* <Box sx={{ paddingRight: "20rem" }}></Box> */}
-      <CardMedia
-        variant="outlined"
-        component="img"
-        sx={{ width: "20%" }}
-        image={imageUrl}
-        alt="Medical Device"
-      />
+      <Box width={{ xs: "30%", md: "20%" }}>
+        <CardMedia
+          variant="outlined"
+          component="img"
+          sx={{ width: "100%" }}
+          image={imageUrl}
+          alt="Medical Device"
+        />
+      </Box>
       <Box
         sx={{
           display: "flex",
@@ -39,7 +41,7 @@ const MedicalDeviceNoBotton = ({ title, subtitle, description, imageUrl }) => {
               fontWeight={"400"}
               textAlign="left"
               sx={{
-                fontSize: "clamp(1.5rem, 1.64vw, 2rem)", // Adjusts between 1rem and 2rem, depending on viewport width
+                fontSize: "clamp(1rem, 1.64vw, 2rem)", // Adjusts between 1rem and 2rem, depending on viewport width
               }}
             >
               {title}
@@ -49,7 +51,7 @@ const MedicalDeviceNoBotton = ({ title, subtitle, description, imageUrl }) => {
               color={"black"}
               textAlign="left"
               sx={{
-                fontSize: "clamp(1rem, 1.23vw, 1.5rem)", // Adjust according to your design
+                fontSize: "clamp(0.8rem, 1.23vw, 1.5rem)", // Adjust according to your design
               }}
             >
               {subtitle}
@@ -65,7 +67,7 @@ const MedicalDeviceNoBotton = ({ title, subtitle, description, imageUrl }) => {
             marginY: 2,
             alignSelf: "flex-start",
             lineHeight: 1.5,
-            fontSize: "clamp(0.9rem, 1.09vw, 1.2rem)",
+            fontSize: "clamp(0.5rem, 1.09vw, 1.2rem)",
             // bottom: 10,
           }}
           textAlign="left"

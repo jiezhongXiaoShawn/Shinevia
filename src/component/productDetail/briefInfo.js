@@ -7,6 +7,7 @@ import {
   Button,
 } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
+
 const BriefInfo = ({ image, title, subTitle, description }) => {
   return (
     <Box display={"flex"} flexDirection={"column"}>
@@ -18,7 +19,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
             color: "black",
             fontFamily: "Microsoft YaHei , sans-serif",
             fontWeight: "700",
-            fontSize: "0.8rem",
+            fontSize: "clamp(0.7rem, 1vw, 0.8rem)", // 自适应字体大小
           }}
         >
           主页
@@ -32,7 +33,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
             color: "black",
             fontFamily: "Microsoft YaHei , sans-serif",
             fontWeight: "400",
-            fontSize: "0.8rem",
+            fontSize: "clamp(0.7rem, 1vw, 0.8rem)", // 自适应字体大小
           }}
         >
           产品中心
@@ -44,7 +45,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
             color: "black",
             fontFamily: "Microsoft YaHei , sans-serif",
             fontWeight: "400",
-            fontSize: "0.8rem",
+            fontSize: "clamp(0.8rem, 1.1vw, 1rem)", // 自适应字体大小
           }}
         >
           {title}
@@ -57,12 +58,13 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
           justifyContent: "center",
           paddingTop: "5rem",
           paddingBottom: "0px",
-          marginBottom: "0px", // 将内容居中对齐
+          marginBottom: "0px",
+          flexDirection: { md: "row", xs: "column" },
         }}
       >
         <Box
           sx={{
-            width: "50%", // 图片占宽度的30%
+            width: "50%",
             display: "flex",
             justifyContent: "center",
             height: "10%",
@@ -71,7 +73,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
           <CardMedia
             variant="contained"
             component="img"
-            sx={{ width: "100%", height: "auto" }} // 宽度100%意味着它会填满父容器的30%
+            sx={{ width: "100%", height: "auto" }}
             image={image}
             alt="Medical Device"
           />
@@ -81,8 +83,8 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            width: "30%",
-            paddingLeft: "5rem",
+            width: { md: "30%", xs: "50%" },
+            paddingLeft: { md: "5rem", xs: "0" },
           }}
         >
           <Typography
@@ -90,6 +92,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
             textAlign="left"
             fontWeight={"700"}
             fontFamily={"Microsoft YaHei , sans-serif"}
+            sx={{ fontSize: "clamp(1.4rem, 2.7vw, 1.7rem)" }} // 自适应字体大小
           >
             {title}
           </Typography>
@@ -98,6 +101,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
             textAlign="left"
             fontWeight={"400"}
             fontFamily={"Microsoft YaHei , sans-serif"}
+            sx={{ fontSize: "clamp(1.5rem, 3vw, 2rem)" }} // 自适应字体大小
           >
             {subTitle}
           </Typography>
@@ -113,13 +117,18 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
             color={"#757575"}
             textAlign={"left"}
             fontFamily={'"Microsoft YaHei , sans-serif"'}
+            sx={{ fontSize: "clamp(0.8rem, 1.5vw, 1rem)" }} // 自适应字体大小
           >
             简介
           </Typography>
           <Typography
             variant="body1"
-            sx={{ marginY: 2, color: "#4A4A4A;" }}
-            textAlign="left"
+            sx={{
+              marginY: 2,
+              color: "#4A4A4A",
+              textAlign: "left",
+              fontSize: "clamp(0.9rem, 1.6vw, 1.1rem)",
+            }} // 自适应字体大小
           >
             {description}
           </Typography>
@@ -146,6 +155,7 @@ const BriefInfo = ({ image, title, subTitle, description }) => {
             textAlign: "center",
             fontFamily: "Microsoft YaHei , sans-serif",
             my: 1,
+            fontSize: "clamp(0.8rem, 1.5vw, 1rem)", // 自适应字体大小
           }}
         >
           产品高光

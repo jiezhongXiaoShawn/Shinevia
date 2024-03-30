@@ -89,7 +89,7 @@ export default function Footer() {
               variant="h6"
               color="inherit"
               gutterBottom
-              textAlign={"left"}
+              textAlign={{ sx: "center", md: "left" }}
             >
               联系方式
             </Typography>
@@ -97,6 +97,7 @@ export default function Footer() {
               display={"flex"}
               flexDirection={"row"}
               alignItems={"center"}
+              justifyContent={{ xs: "center", md: "left" }}
               gap={1}
             >
               <Box alignItems={"center"}>
@@ -118,6 +119,7 @@ export default function Footer() {
               display={"flex"}
               flexDirection={"row"}
               alignItems={"center"}
+              justifyContent={{ xs: "center", md: "left" }}
               gap={1}
             >
               <Box>
@@ -131,6 +133,7 @@ export default function Footer() {
               display={"flex"}
               flexDirection={"row"}
               alignItems={"center"}
+              justifyContent={{ xs: "center", md: "left" }}
               gap={1}
             >
               <Box>

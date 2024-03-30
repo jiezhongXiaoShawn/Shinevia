@@ -56,7 +56,8 @@ const Intro = () => {
           position: "absolute",
           bottom: "15%",
           left: "5%",
-          width: { xs: "100%", md: "50%", lg: "40%" }, // 考虑大屏幕时宽度占比调整
+          width: { xs: "90%", md: "50%", lg: "40%" },
+          pr: "5%",
         }}
       >
         <Typography

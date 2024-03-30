@@ -1,15 +1,22 @@
 import { Box, CardMedia, List, ListItem, Typography } from "@mui/material";
 import SquareIcon from "@mui/icons-material/Square";
+
 const DetailRight = ({ image, title, data }) => {
   return (
     <Box
       display="flex"
       justifyContent="center"
       alignItems="center"
-      p={2}
+      pb={2}
       width="100%"
     >
-      <Box sx={{ flex: "1 1 30%", maxWidth: "30%", margin: "0 2%" }}>
+      <Box
+        sx={{
+          flex: "1 1 30%",
+          maxWidth: { md: "30%", xs: "80%" },
+          margin: "0 2%",
+        }}
+      >
         <CardMedia
           component="img"
           image={image}
@@ -31,6 +38,9 @@ const DetailRight = ({ image, title, data }) => {
             variant="h4"
             fontFamily="Microsoft YaHei , sans-serif"
             fontWeight="400"
+            sx={{
+              fontSize: "clamp(1.5rem, 4vw, 2.5rem)", // Adjusts between 1.5rem and 2.5rem
+            }}
           >
             {title}
           </Typography>
@@ -43,15 +53,17 @@ const DetailRight = ({ image, title, data }) => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                bgcolor: index % 2 === 0 ? "#F2FBFF" : "#F2F2F2", // 蓝灰交替背景色
-                textAlign: "left", // 文本左对齐
-                width: "100%", // 列表项宽度
+                bgcolor: index % 2 === 0 ? "#F2FBFF" : "#F2F2F2",
+                textAlign: "left",
+                width: "100%",
               }}
             >
-              <Box display={"flex"} />
               <Typography
                 variant="body2"
-                sx={{ width: "50%" }}
+                sx={{
+                  width: "50%",
+                  fontSize: "clamp(0.75rem, 2vw, 1rem)", // Dynamically adjusts font size
+                }}
                 fontFamily={"Microsoft YaHei , sans-serif"}
                 fontWeight={"400"}
               >
@@ -59,7 +71,10 @@ const DetailRight = ({ image, title, data }) => {
               </Typography>
               <Typography
                 variant="body2"
-                sx={{ width: "50%" }}
+                sx={{
+                  width: "50%",
+                  fontSize: "clamp(0.75rem, 2vw, 1rem)", // Dynamically adjusts font size
+                }}
                 fontFamily={"Microsoft YaHei , sans-serif"}
                 fontWeight={"400"}
               >
