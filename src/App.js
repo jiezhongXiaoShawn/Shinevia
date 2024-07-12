@@ -9,7 +9,7 @@ import Argos4KFluorscent from "./page/ARGOS-4KFLUORSCENT";
 import Horus3D4K from "./page/HORUS-3D4K";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./page/home";
-
+import Article from "./component/article";
 function App() {
   return (
     <Router>
@@ -22,6 +22,7 @@ function App() {
           <Route path="/argos-4k-fluorscent" element={<Argos4KFluorscent />} />
           <Route path="/horus-3d-4k" element={<Horus3D4K />} />
           <Route path="/" element={<HomePage />} />
+          <Route path="/article/:id" element={<Article />} />
         </Routes>
         <Footer />
       </div>

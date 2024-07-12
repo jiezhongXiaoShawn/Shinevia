@@ -1,0 +1,53 @@
+.custom-heading {
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-align: left; /* 左对齐 */
+}
+
+.custom-heading-1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.custom-heading-2 {
+  font-size: 2.5em;
+  margin-bottom: 0.75em;
+}
+
+.custom-heading-3 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.custom-heading-4 {
+  font-size: 1.5em;
+  margin-bottom: 1.25em;
+}
+
+.custom-heading-5 {
+  font-size: 1.25em;
+  margin-bottom: 1.5em;
+}
+
+.custom-heading-6 {
+  font-size: 1em;
+  margin-bottom: 1.75em;
+}
+
+.image-container {
+  text-align: center;
+  margin: 0em 0;
+}
+
+.custom-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-title {
+  font-size: 0.8em;
+  color: "black";
+  margin-top: 0.5em;
+  align-items: center;
+  justify-content: center;
+}

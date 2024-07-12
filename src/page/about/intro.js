@@ -7,7 +7,7 @@ const Intro = () => {
       sx={{
         overflow: "hidden",
         position: "relative",
-        height: "100vh",
+        height: "80vh",
         width: "100%",
         backgroundImage: "url('/homepage/topImg.gif')",
         backgroundSize: "cover",

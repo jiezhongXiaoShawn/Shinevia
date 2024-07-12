@@ -46,10 +46,10 @@ export default function Navbar() {
             gap: "40px",
           }}
         >
-          <NavLink to="/about" className="nav-link">
+          <NavLink to="/about" className="nav-link" fontSize={"1.2rem"}>
             关于我们
           </NavLink>
-          <NavLink to="/product" className="nav-link">
+          <NavLink to="/product" className="nav-link" fontSize={"1.2rem"}>
             产品中心
           </NavLink>
         </Box>
