@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
 
-export default function Top({ title, subtitle, topImg }) {
-  console.log(title, subtitle, topImg);
+export default function ActivityTop({ title, subtitle, topImg }) {
+  // console.log(title, subtitle, topImg);
   return (
     <Box
       sx={{
