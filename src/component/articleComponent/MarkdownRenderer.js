@@ -60,14 +60,14 @@ const MarkdownRenderer = ({ file }) => {
           variant="body1"
           textAlign={"left"}
           sx={{
-            textShadow: "0px 4px 4px #00000040",
+            // textShadow: "0px 4px 4px #00000040",
             color: "black",
             fontSize: "1.5rem",
             fontWeight: "350",
             textAlign: "justify",
-            letterSpacing: "0.1rem",
+            letterSpacing: "0.1em",
           }}
-          lineHeight={"30px"}
+          lineHeight={"33px"}
         >
           {React.Children.toArray(children).flatMap((child, index) =>
             typeof child === "string"
@@ -107,6 +107,8 @@ const MarkdownRenderer = ({ file }) => {
                 textAlign: "left",
                 marginTop: "2rem",
                 fontSize: "1.1rem",
+                letterSpacing: "0.18rem",
+                lineHeight: "30px",
               }}
             >
               {alt}

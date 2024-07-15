@@ -1,7 +1,7 @@
 import React from "react";
 import data from "./data";
 import { useParams } from "react-router-dom";
-import ArticleTemplate1 from "./articleTemplate/template1";
+
 import MarkdownRenderer from "./articleComponent/MarkdownRenderer";
 import Top from "./articleComponent/top";
 import End from "./articleComponent/end";
