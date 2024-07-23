@@ -35,7 +35,7 @@ export default function ActivityTop({ title, subtitle, topImg }) {
           {title}
         </Typography>
         <Typography
-          fontSize={"1.6rem"}
+          fontSize={"24px"}
           lineHeight={"36px"}
           sx={{ textShadow: "0px 4px 4px #00000040" }}
           width={"70%"}

@@ -29,7 +29,7 @@ const MarkdownRenderer = ({ file }) => {
           textAlign={"left"}
           fontWeight={"300"}
           sx={{ textShadow: "0px 4px 4px #00000040" }}
-
+          fontSize={"48px"}
           //   #className="custom-heading custom-heading-1"
         >
           {children}
@@ -62,7 +62,7 @@ const MarkdownRenderer = ({ file }) => {
           sx={{
             // textShadow: "0px 4px 4px #00000040",
             color: "black",
-            fontSize: "1.5rem",
+            fontSize: "24px",
             fontWeight: "350",
             textAlign: "justify",
             letterSpacing: "0.1em",
